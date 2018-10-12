@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picturegram</title>
+
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			font-family: courier;
+			color: white
+		}
+
+		#main {
+			width: calc(100% - 10px);
+			height: auto;
+			margin: 5px
+		}
+
+		.other {
+			width: calc(33.3333333% - 13px);
+			height: auto;
+			margin: 4px;
+		}
+
+		img {
+			border: 1px solid darkred;
+		}
+		#content {
+			width: 550px;
+			margin: auto;
+		}
+
+		body {
+			background: url("jlwp.jpg");
+			background-size: 100% auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="content">
+		<h1>Picturegram</h1>
+
+			<img src="darkseid.jpg" id="main">
+			<img src="superman.jpg" class="other">
+			<img src="batman.jpeg" class="other">
+			<img src="wonderwoman.jpg" class="other">
+			<img src="hawkgirl.jpg" class="other">
+			<img src="martian.jpg" class="other">
+			<img src="greenlantern.jpg" class="other">
+			<img src="cyborg.jpg" class="other">
+			<img src="flash.png" class="other">
+			<img src="zatanna.jpg" class="other">
+	</div>
+
+</body>
+
+	<script type="text/javascript">
+		const bigImage = document.querySelector("#main");
+		const images = document.querySelectorAll(".other");
+
+		images.forEach(image => image.addEventListener("click", 
+			function(e) {
+				let clickedImage = e.target.src;
+				let swapImage = bigImage.src;
+				bigImage.src = clickedImage;
+				e.target.src = swapImage;
+			}
+			));
+	</script>
+</html>
