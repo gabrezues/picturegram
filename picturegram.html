@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 	<title>Picturegram</title>
 
 	<style type="text/css">
@@ -13,18 +14,19 @@
 		#main {
 			width: calc(100% - 10px);
 			height: auto;
-			margin: 5px
+			margin: 5px;
+			border: 1px solid darkred;
+			border-style: dashed;
 		}
 
 		.other {
 			width: calc(33.3333333% - 13px);
 			height: auto;
 			margin: 4px;
+			border: 2px solid rgb(10,243,142);
+			border-radius: 5px;
 		}
 
-		img {
-			border: 1px solid darkred;
-		}
 		#content {
 			width: 550px;
 			margin: auto;
@@ -33,13 +35,31 @@
 		body {
 			background: url("jlwp.jpg");
 			background-size: 100% auto;
+			color:blueviolet;
+		}
+
+		a:link {
+			color:red;
+		}
+
+		a:visited {
+			color:cyan;
+		}
+
+		table,th,td {
+			border: 2px dotted green;
+			padding: 5px;
+			text-align:center;
 		}
 		
 	</style>
 </head>
 <body>
+
 	<div id="content">
-		<h1>Picturegram</h1>
+		<h1 style="color: #3F22FF;">Picturegram</h1>
+
+		<!--How the grid starts off-->
 
 			<img src="darkseid.jpg" id="main">
 			<img src="superman.jpg" class="other">
@@ -52,6 +72,76 @@
 			<img src="flash.png" class="other">
 			<img src="zatanna.jpg" class="other">
 	</div>
+
+	<p style="text-align:center;"><i>Made by a <q>nerd!</q></i></p>
+	<a href="https://www.dccomics.com/">The Creators</a>
+
+	<i class="fas fa-heart"></i>
+
+	<table>
+		<tr>
+			<th>Superhero</th>
+			<th>Alter Ego</th>
+			<th>Personal Rank</th>
+		</tr>
+		<tr>
+			<td>Superman</td>
+			<td>Clark Kent</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Batman</td>
+			<td>Bruce Wayne</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Flash</td>
+			<td>Wally West</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Wonder Woman</td>
+			<td>Diana Prince</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>Hawkgirl</td>
+			<td>Shayera Hol</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>Green Lantern</td>
+			<td>John Stuart</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>Cyborg</td>
+			<td>Victor Stone</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>Zatanna</td>
+			<td>Zatanna Zatara</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Martian Manhunter</td>
+			<td>J'onn J'onzz</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Darkseid</td>
+			<td>Uxas</td>
+			<td>5</td>
+		</tr>
+	</table>
+
+	<ul>
+		<li>DC is the better universe of superheroes</li>
+		<li>Although Marvel has better live action films, DC's animated movies take any and every prize.</li>
+	</ul>
+
+	<iframe src="https://dc.fandom.com/wiki/DC_Comics_Database" title="Database"></iframe>
 
 </body>
 
